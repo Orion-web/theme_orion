@@ -65,3 +65,20 @@ License: GNU General Public License v2 or later
     float: left;
 }
 
+
+
+.custom-menu-class{
+background-color: #FF9056;
+height: 22vh;
+}
+
+.custom-menu-class ul{
+  list-style: none;
+}
+
+.custom-menu-class li{
+  font-family: 'Roboto';
+  font-size: 32px;
+  display: inline-block;
+}
+
