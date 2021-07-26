@@ -11,12 +11,16 @@
 <body>
 <?php wp_body_open();?>
 
+<div class="container">
 <?= get_custom_logo($blog_id)?>
 <?php
-wp_nav_menu( array( 
+wp_nav_menu( array(
     'theme_location' => 'my-custom-menu', 
-    'container_class' => 'custom-menu-class' ) ); 
+    'container_class' => 'custom-menu-class',
+    'menu_class' => 'nav'
+    ));
 ?>
+</div>
 
 
 

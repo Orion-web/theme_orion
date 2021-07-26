@@ -17,43 +17,7 @@ License: GNU General Public License v2 or later
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-#navbar {
-    overflow: hidden;
-    background-color: #FF9056;
-  }
-  
-  /* Navbar links */
-  #navbar a {
-    float: right;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px;
-    text-decoration: none;
-  }
-  
-  .navcont{
-    font-family: 'Roboto';
-    font-size: 32px;
-    margin-top: 7vh;
-  }
 
-  /* Page content */
-/*   .content {
-    padding: 16px;
-  } */
-  
-  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  
-  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-  .sticky + .content {
-    padding-top: 60px;
-  }
 
 
 /*   *{
@@ -61,19 +25,16 @@ License: GNU General Public License v2 or later
   } */
 
 
-.logo{
-    float: left;
-}
+
 
 
 
 .custom-menu-class{
 background-color: #FF9056;
-height: 22vh;
 }
 
-.custom-menu-class ul{
-  list-style: none;
+.nav{
+  text-align: end;
 }
 
 .custom-menu-class li{
@@ -82,3 +43,21 @@ height: 22vh;
   display: inline-block;
 }
 
+.nav a{
+  text-decoration: none;
+  color: white;
+  margin: 4vw;
+}
+
+
+.container{
+  background-color: #FF9056;
+}
+
+.lala{
+  background-color: #222222;
+  color: white;
+}
+
+
+*{border:1px red solid;}

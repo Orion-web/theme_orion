@@ -37,7 +37,7 @@ on peut faire pareil avec les scripts*/
 
 
 wp_enqueue_style(
-'trafalgar-custom-css',
+'orion-custom-css',
 get_template_directory_uri().'/styles/main.css',
 array(),
 '1.0'
@@ -50,6 +50,14 @@ background-color : ###### !important;
 }*/
 
 
+if (is_front_page()) {
+    wp_enqueue_style(
+        'zizi',
+        get_template_directory_uri(). '/test.css',
+        array(),
+        '1.0'
+        );
+}
 
 }
 add_action('wp_enqueue_scripts','register_assets');
@@ -80,3 +88,35 @@ function register_my_menu() {
   add_action( 'init', 'wpb_custom_new_menu' );
 
   
+/* ----------------------------------------CUSTOM-POST-TYPE-------------------------------------------------- */
+
+
+
+  function capitaine_register_post_types() {
+	
+    // CPT Portfolio
+    $labels = array(
+        'name' => 'pROJETS',
+        'all_items' => 'Tous les projets',  // affiché dans le sous menu
+        'singular_name' => 'Projet',
+        'add_new_item' => 'Ajouter un projet',
+        'edit_item' => 'Modifier le projet',
+        'menu_name' => 'CustomPostTypeTEST'
+    );
+
+	$args = array(
+        'labels' => $labels,
+        'public' => true,
+        'show_in_rest' => true,
+        'has_archive' => true,
+        'supports' => array( 'title', 'editor','thumbnail' ),
+        'menu_position' => 5, 
+        'menu_icon' => 'dashicons-admin-customizer',
+	);
+
+	register_post_type( 'portfolio', $args );
+}
+add_action( 'init', 'capitaine_register_post_types' ); // Le hook init lance la fonction
+
+
+/* --------------------------------FIN-CUSTOM-POST-TYPE------------------------------- */
