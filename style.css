@@ -31,7 +31,11 @@ License: GNU General Public License v2 or later
 
 .custom-menu-class{
 background-color: #FF9056;
+width: fit-content;
 float: right;
+vertical-align: middle;
+
+
 }
 
 .nav{
@@ -63,6 +67,10 @@ background: white;
   margin: 4vw;
 }
 
+
+.container{
+  background-color: #FF9056;
+}
 
 
 
