@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,16 +10,10 @@
 </head>
 <body>
 <?php wp_body_open();?>
-<div id="navbar">
+<div id="navbar" class="navcont">
 
 <div class="logo"><?= get_custom_logo($blog_id)?></div>
-
-  <a class="navcont" href="#home">L'agence</a>
-
-  <a class="navcont" href="#news">Projets</a>
-
-  <a class="navcont" href="#contact">Contact</a>
-
+  <?php wp_nav_menu(array('theme_location' => 'primary')); ?>
 </div>
 
 
