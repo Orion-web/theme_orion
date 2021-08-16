@@ -12,7 +12,7 @@
 <?php wp_body_open();?>
 
 <div class="container">
-<?= get_custom_logo($blog_id)?>
+<?= get_custom_logo()?>
 <?php
 wp_nav_menu( array(
     'theme_location' => 'my-custom-menu',
