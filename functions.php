@@ -132,6 +132,26 @@ add_action( 'init', 'capitaine_register_post_types' ); // Le hook init lance la 
 /* --------------------------------FIN-CUSTOM-POST-TYPE------------------------------- */
 /* ----------------------------------DEBUT SECTION BG---------------------------------------- */
 
+add_action( 'customize_register' , 'my_theme_options' );
+function my_theme_options( $wp_customize ) {
+    $wp_customize->add_section('mytheme_section_bg_img', array(
+            'title'       => __( 'Arrière plan par section', 'orion' ),
+            'priority'    => 100,
+            'capability'  => 'edit_theme_options',
+            'description' => __('Select a background image', 'orion'), 
+        ) 
+    );
+
+    $wp_customize->add_setting('section_bg_img');
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'section_bg_img', array(
+            'label'    => __( 'Background image', 'orion' ), 
+            'section'  => 'mytheme_section_bg_img',
+            'settings' => 'section_bg_img',
+            'priority' => 10,
+        ) 
+    ));
+}
 
 /* ----------------------------------FIN SECTION BG----------------------------------- */
 /* ----------------------------------DEBUT BLOCK SPLITTER----------------------------------- */
