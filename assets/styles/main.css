@@ -1,0 +1,93 @@
+/* Style the navbar */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+
+/*   *{
+      border:1px red solid;
+  } */
+
+
+
+
+
+.custom-menu-class{
+background-color: #FF9056;
+width: fit-content;
+float: right;
+margin-top: 6vh;
+}
+
+.nav{
+  justify-content: end;
+  width: fit-content;
+}
+
+.custom-menu-class li{
+  font-family: 'Roboto';
+  font-size: 32px;
+  display: inline-block;
+}
+
+.custom-menu-class li::after{
+  content: "";
+  border-right: 3px solid #fff;
+  margin: auto;
+  padding: 20px;
+}
+
+
+.custom-menu-class li:nth-child(3)::after{
+  display: none;
+}
+
+
+
+.nav a{
+  text-decoration: none;
+  color: white;
+  margin: 4vw;
+}
+
+
+.container{
+  background-color: #FF9056;
+}
+
+.custom-logo{
+  margin: 2px;
+  margin-left: 2vw;
+}
+
+
+.frontvideo{
+    width: 50vw !important;
+    margin-left: 25vw;
+    margin-top: -25vh;
+    margin-bottom: 8vh;
+    border: 1px white solid;
+}
+
+
+.slogan-header{
+    align-items: center;
+    text-align: center;
+    margin-bottom: 8vh;
+}
+
+.white-sub-section{
+    background-image: none !important;
+    background-color: white;
+}
+
+
+*{padding: 0;
+margin: 0;
+border: 1px red solid;}
+
+body{
+    height: 3000px;
+}
+

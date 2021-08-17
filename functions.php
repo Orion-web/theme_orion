@@ -52,8 +52,8 @@ background-color : ###### !important;
 
 if (is_front_page()) {
     wp_enqueue_style(
-        'zizi',
-        get_template_directory_uri(). '/test.css',
+        'front',
+        get_template_directory_uri(). '/assets/styles/main.css',
         array(),
         '1.0'
         );
@@ -70,6 +70,16 @@ add_theme_support('custom-logo', array(
 ));
 }
 add_action('after_setup_theme','custom_logo');
+
+
+
+/* ------------------BACKGROUND------------------- */
+add_theme_support( 'custom-background' );
+$args = array(
+	'default-image' => '/assets/img/landing.svg',
+);
+add_theme_support( 'custom-background', $args );
+/* ------------------------------------------------------- */
 
 
 
@@ -120,3 +130,22 @@ add_action( 'init', 'capitaine_register_post_types' ); // Le hook init lance la 
 
 
 /* --------------------------------FIN-CUSTOM-POST-TYPE------------------------------- */
+/* ----------------------------------DEBUT SECTION BG---------------------------------------- */
+
+
+/* ----------------------------------FIN SECTION BG----------------------------------- */
+/* ----------------------------------DEBUT BLOCK SPLITTER----------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------FIN BLOCK SPLITTER----------------------------------- */
+
