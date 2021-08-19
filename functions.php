@@ -169,3 +169,10 @@ function my_theme_options( $wp_customize ) {
 
 /* ----------------------------------FIN BLOCK SPLITTER----------------------------------- */
 
+
+
+
+
+/* -----CUSTOM HEADER IMAGE-------- */
+add_theme_support( 'custom-header' );
+/* --------------------------------- */
