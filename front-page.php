@@ -31,6 +31,16 @@
                 <?php endwhile; wp_reset_query(); ?>
 </div>
         <!-- ---fermeture middletext--- -->
+        <!-- ---ouverture middlepic--- -->
+<div class="middlepic">
+<?php $loop = new WP_Query((array('post_type' => 'middlepicture','order'=>'ASC'))); ?>
+                <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+
+                            <?php the_content() ?>
+
+                <?php endwhile; wp_reset_query(); ?>
+</div>
+
 
 
 

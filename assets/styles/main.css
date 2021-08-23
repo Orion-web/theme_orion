@@ -62,17 +62,18 @@ margin-top: 6vh;
 }
 
 .head{
-  height: 125vh;
   background: url('../img/bg-landing.png');
-  background-size: 100% 100%;
+  background-size: 100% auto !important;
   justify-content: center;
   align-items: center;
 }
 
 .videolanding{
-  width: 70vw !important;
-  margin-left: 15vw !important;
-  margin-right: 15vw !important;
+  width: 100% !important;
+  max-width: 70rem !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-bottom: 4vw !important;
 }
 
 
@@ -80,7 +81,9 @@ margin-top: 6vh;
 text-align: center !important;
 justify-content: center !important;
 align-items: center !important;
-height: 35vh !important;
+max-height: 20rem !important;
+width: 100% !important;
+height: auto !important;
 }
 
 .middletext_title{
@@ -97,13 +100,26 @@ height: 35vh !important;
   margin-left: 25vw !important;
   margin-right: 25vw !important;
   font-size: 3vh !important;
+  padding-bottom: 2vw !important;
 }
 
-.middletext_btn{
-  align-items: center !important;
+.wp-block-buttons{
+
+  justify-content: center !important;
+
+  
+
+}
+
+.wp-block-button__link{
+  border-radius: 15px !important;
+  padding: 15px 55px 15px 55px !important;
+  margin-bottom: 5vw !important;
+}
+
+.wp-image-274{
+width: 100% !important;
 }
 
 
-*{
-  border: 1px red solid;
-}
+*{border: 1px red solid;}
