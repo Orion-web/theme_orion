@@ -20,10 +20,10 @@ array(),
 '1.0'
 );
 
-/* wp_enqueue_style(
+wp_enqueue_style(
 'wordpress-css',
 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css'
-); */
+);
 
 wp_enqueue_style(
 'woo-commerce',
@@ -102,19 +102,140 @@ function register_my_menu() {
 
 
 
-  function capitaine_register_post_types() {
-	
-    // CPT Portfolio
-    $labels = array(
-        'name' => 'pROJETS',
-        'all_items' => 'Tous les projets',  // affiché dans le sous menu
-        'singular_name' => 'Projet',
-        'add_new_item' => 'Ajouter un projet',
-        'edit_item' => 'Modifier le projet',
-        'menu_name' => 'CustomPostTypeTEST'
-    );
 
-	$args = array(
+function orion_register_post_types() {
+	
+        // CPT Portfolio
+        $labels = array(
+            'name' => 'headerlanding',
+            'all_items' => 'Tous les CPT',  // affiché dans le sous menu
+            'singular_name' => 'HeaderLanding cpt',
+            'add_new_item' => 'Ajouter un cpt',
+            'edit_item' => 'Modifier le cpt',
+            'menu_name' => 'headerlanding'
+        );
+
+      $args = array(
+            'labels' => $labels,
+            'public' => true,
+            'show_in_rest' => true,
+            'has_archive' => true,
+            'supports' => array( 'title', 'editor','thumbnail' ),
+            'menu_position' => 5, 
+            'menu_icon' => 'dashicons-admin-customizer',
+      );
+
+      register_post_type( 'HeaderLanding', $args );
+      
+
+/*       ----------------------------------------------------- */
+
+          $labels = array(
+            'name' => 'videolanding',
+            'all_items' => 'Tous les CPT',  // affiché dans le sous menu
+            'singular_name' => 'videolanding cpt',
+            'add_new_item' => 'Ajouter un cpt',
+            'edit_item' => 'Modifier le cpt',
+            'menu_name' => 'videolanding'
+          );
+
+          $args = array(
+            'labels' => $labels,
+            'public' => true,
+            'show_in_rest' => true,
+            'has_archive' => true,
+            'supports' => array( 'title', 'editor','thumbnail' ),
+            'menu_position' => 5, 
+            'menu_icon' => 'dashicons-admin-customizer',
+          );
+
+          register_post_type( 'videolanding', $args );
+
+
+/*       ----------------------------------------------------- */
+
+        $labels = array(
+            'name' => 'middletext',
+            'all_items' => 'Tous les CPT',  // affiché dans le sous menu
+            'singular_name' => 'middletext cpt',
+            'add_new_item' => 'Ajouter un cpt',
+            'edit_item' => 'Modifier le cpt',
+            'menu_name' => 'middletext'
+        );
+
+      $args = array(
+            'labels' => $labels,
+            'public' => true,
+            'show_in_rest' => true,
+            'has_archive' => true,
+            'supports' => array( 'title', 'editor','thumbnail' ),
+            'menu_position' => 5, 
+            'menu_icon' => 'dashicons-admin-customizer',
+      );
+
+      register_post_type( 'middletext', $args );
+
+
+/*       ------------------------------------------------------ */
+
+
+        $labels = array(
+            'name' => 'middlepicture',
+            'all_items' => 'Tous les CPT',  // affiché dans le sous menu
+            'singular_name' => 'middlepicture cpt',
+            'add_new_item' => 'Ajouter un cpt',
+            'edit_item' => 'Modifier le cpt',
+            'menu_name' => 'middlepicture'
+        );
+
+      $args = array(
+            'labels' => $labels,
+            'public' => true,
+            'show_in_rest' => true,
+            'has_archive' => true,
+            'supports' => array( 'title', 'editor','thumbnail' ),
+            'menu_position' => 5, 
+            'menu_icon' => 'dashicons-admin-customizer',
+      );
+
+      register_post_type( 'middlepicture', $args );
+
+/* -------------------------------------------------------- */
+
+
+        $labels = array(
+            'name' => 'skillpictograms',
+            'all_items' => 'Tous les CPT',  // affiché dans le sous menu
+            'singular_name' => 'skillpictograms cpt',
+            'add_new_item' => 'Ajouter un cpt',
+            'edit_item' => 'Modifier le cpt',
+            'menu_name' => 'skillpictograms'
+        );
+
+      $args = array(
+            'labels' => $labels,
+            'public' => true,
+            'show_in_rest' => true,
+            'has_archive' => true,
+            'supports' => array( 'title', 'editor','thumbnail' ),
+            'menu_position' => 5, 
+            'menu_icon' => 'dashicons-admin-customizer',
+      );
+
+      register_post_type( 'skillpictograms', $args );
+
+/* -------------------------------------------------------- */
+
+      $labels = array(
+        'name' => 'realisations',
+        'all_items' => 'Tous les CPT',  // affiché dans le sous menu
+        'singular_name' => 'realisations cpt',
+        'add_new_item' => 'Ajouter un cpt',
+        'edit_item' => 'Modifier le cpt',
+        'menu_name' => 'realisations'
+      );
+
+      $args = array(
         'labels' => $labels,
         'public' => true,
         'show_in_rest' => true,
@@ -122,11 +243,40 @@ function register_my_menu() {
         'supports' => array( 'title', 'editor','thumbnail' ),
         'menu_position' => 5, 
         'menu_icon' => 'dashicons-admin-customizer',
-	);
+      );
 
-	register_post_type( 'portfolio', $args );
+      register_post_type( 'realisations', $args );
+
+/* -------------------------------------------------------- */
+
 }
-add_action( 'init', 'capitaine_register_post_types' ); // Le hook init lance la fonction
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+add_action( 'init', 'orion_register_post_types' ); // Le hook init lance la fonction
 
 
 /* --------------------------------FIN-CUSTOM-POST-TYPE------------------------------- */
