@@ -40,6 +40,14 @@
 
                 <?php endwhile; wp_reset_query(); ?>
 </div>
+<div class="picto-skills">
+<?php $loop = new WP_Query((array('post_type' => 'skillpictograms','order'=>'ASC'))); ?>
+                <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+
+                            <?php the_content() ?>
+
+                <?php endwhile; wp_reset_query(); ?>
+</div>
 
 
 

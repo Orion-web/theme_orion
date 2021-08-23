@@ -121,5 +121,20 @@ height: auto !important;
 width: 100% !important;
 }
 
+.wp-block-image{
 
-*{border: 1px red solid;}
+  text-align: center !important;
+}
+
+/* .wp-block-column{
+  text-align: center !important;
+  align-items: center !important;
+  justify-content: center !important;
+} */
+
+.picto_p{
+margin: 0px 5vw 0px 5vw !important;
+
+}
+
+
