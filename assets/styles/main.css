@@ -13,52 +13,43 @@
 
 
 
-.custom-menu-class{
-background-color: #FF9056;
-width: fit-content;
-float: right;
-margin-top: 6vh;
+
+
+.navbar{
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
-.nav{
-  justify-content: end;
-  width: fit-content;
-}
-
-.custom-menu-class li{
-  font-family: 'Roboto';
-  font-size: 32px;
-  display: inline-block;
-}
-
-.custom-menu-class li::after{
-  content: "";
-  border-right: 3px solid #fff;
-  margin: auto;
-  padding: 20px;
-}
-
-
-.custom-menu-class li:nth-child(3)::after{
-  display: none;
+.navbar-collapse {
+  flex-grow: 0;
 }
 
 
 
-.nav a{
-  text-decoration: none;
-  color: white;
-  margin: 4vw;
+
+
+.nav-link{
+  text-decoration: none !important;
+  color: white !important;
+  margin: 4vw !important;
+  font-size: 30px !important;
 }
 
 
-.container{
+.container-fluid{
   background-color: #FF9056;
+  font-family: 'Roboto';
 }
 
-.custom-logo{
-  margin: 2px;
-  margin-left: 2vw;
+.custom-logo-link{
+margin-right: auto !important;
+}
+
+@media screen and (max-width: 720px) {
+    .custom-logo-link{
+      margin-right: none !important;
+      margin-left: auto !important;
+    }  
 }
 
 .head{
@@ -104,11 +95,7 @@ height: auto !important;
 }
 
 .wp-block-buttons{
-
   justify-content: center !important;
-
-  
-
 }
 
 .wp-block-button__link{
@@ -134,7 +121,4 @@ width: 100% !important;
 
 .picto_p{
 margin: 0px 5vw 0px 5vw !important;
-
 }
-
-

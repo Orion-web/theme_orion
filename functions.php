@@ -304,7 +304,21 @@ function my_theme_options( $wp_customize ) {
 }
 
 /* ----------------------------------FIN SECTION BG----------------------------------- */
-/* ----------------------------------DEBUT BLOCK SPLITTER----------------------------------- */
+/* ----------------------------------DEBUT NAV BOOTSTRAP----------------------------------- */
+
+/**
+ * Register Custom Navigation Walker
+ */
+function register_navwalker(){
+  require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
+}
+add_action( 'after_setup_theme', 'register_navwalker' );
+
+/* ------------------------------------------------------------------------------------------- */
+
+/*End*/
+
+/* ------------------------------------------------------------------------------------------- */
 
 
 
@@ -317,7 +331,8 @@ function my_theme_options( $wp_customize ) {
 
 
 
-/* ----------------------------------FIN BLOCK SPLITTER----------------------------------- */
+
+/* ----------------------------------FIN MENU BOOTSTRAP----------------------------------- */
 
 
 
