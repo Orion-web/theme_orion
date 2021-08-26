@@ -1,24 +1,21 @@
 
 <?php get_header();?>
 
-<div class="head">
-        <?php get_custom_header();?>
-        <?php $loop = new WP_Query((array('post_type' => 'headerlanding','order'=>'ASC'))); ?>
-                <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
-                            <?php the_content() ?>
+        
+<div <?php
 
-                    <?php endwhile; wp_reset_query(); ?>
+if ( $section_bg_img = get_theme_mod( 'section_bg_img' ) )
+    echo ' style="background-image: url(' . $section_bg_img . ');"';
+
+                        
+        the_content();
+
+?>
 
 
-        <?php $loop = new WP_Query((array('post_type' => 'videolanding','order'=>'ASC'))); ?>
-                <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
-                            <?php the_content() ?>
-
-                    <?php endwhile; wp_reset_query(); ?>
-
-</div> <!-- ---fermeture head background--- -->
+ <!-- ---fermeture head background--- -->
 
         <!-- ---ouverture middletext--- -->
 

@@ -11,6 +11,8 @@
 <body>
 <?php wp_body_open();?>
 
+
+
 <nav class="navbar navbar-expand-md navbar-light bg-light" role="navigation">
   <div class="container-fluid">
   <a class="navbar-brand" href="#"><?= get_custom_logo($blog_id) ?></a>

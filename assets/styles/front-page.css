@@ -55,14 +55,14 @@
   max-width: 70rem !important;
   margin-left: auto !important;
   margin-right: auto !important;
-  padding-bottom: 4vw !important;
+  margin-top: -150px !important;
 }
 
 .slogan-header {
   text-align: center !important;
   justify-content: center !important;
   align-items: center !important;
-  max-height: 20rem !important;
+  max-height: 52vw !important;
   width: 100% !important;
   height: auto !important;
 }
@@ -116,7 +116,7 @@
   margin: 2vh 5vw 2vh 5vw !important;
   text-align: center !important;
   font-family: "Roboto";
-  font-size: 1vw !important;
+  font-size: 1rem !important;
 }
 
 .maingrid {
