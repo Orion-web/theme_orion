@@ -25,12 +25,6 @@ wp_enqueue_style(
 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css'
 );
 
-wp_enqueue_style(
-'woo-commerce',
-get_stylesheet_uri(),
-array(),
-'1.0'
-);
 
 /*style que je n'ai pas dans mon truc mais qui existe chez tiavina et son theme trafalgar
 on peut faire pareil avec les scripts*/
@@ -341,3 +335,10 @@ add_action( 'after_setup_theme', 'register_navwalker' );
 /* -----CUSTOM HEADER IMAGE-------- */
 add_theme_support( 'custom-header' );
 /* --------------------------------- */
+
+
+/* --------------CUSTOM SLIDER---------------- */
+
+
+
+  /* --------------FIN CUSTOM SLIDER---------------- */
