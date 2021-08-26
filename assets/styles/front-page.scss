@@ -1,0 +1,151 @@
+/* Style the navbar */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+
+/*   *{
+      border:1px red solid;
+  } */
+
+
+
+
+
+
+
+.navbar{
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+
+
+
+
+.nav-link{
+  text-decoration: none !important;
+  color: white !important;
+  margin: 4vw !important;
+  font-size: 30px !important;
+}
+
+
+.container-fluid{
+  background-color: #FF9056;
+  font-family: 'Roboto';
+  height: auto !important;
+}
+
+.custom-logo-link{
+margin-right: auto !important;
+}
+
+
+@media screen and (max-width: 720px) {
+    .custom-logo-link{
+      margin-left: 0vw !important;
+    }
+    .custom-logo{
+      width: 16vw !important;
+      height: 16vw !important;
+    }
+}
+
+/* .head{
+  background: url('../img/bg-landing.png');
+  background-size: 100% auto !important;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* @media screen and (max-width:720px) {
+  .head{
+    background: none;
+  }
+} */
+
+.videolanding{
+  width: 100% !important;
+  max-width: 70rem !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-bottom: 4vw !important;
+}
+
+
+.slogan-header{
+text-align: center !important;
+justify-content: center !important;
+align-items: center !important;
+max-height: 20rem !important;
+width: 100% !important;
+height: auto !important;
+}
+
+.middletext_title{
+  font-family: 'Roboto' !important;
+  font-size: 5vh !important;
+  margin-top: 10vh !important;
+  margin-left: 15vw !important;
+  margin-right: 15vw !important;
+  margin-bottom: 5vh !important;
+}
+
+.middletext_p{
+  width: 50vw !important;
+  margin-left: 25vw !important;
+  margin-right: 25vw !important;
+  font-size: 3vh !important;
+  padding-bottom: 2vw !important;
+}
+
+.wp-block-buttons{
+  justify-content: center !important;
+}
+
+.wp-block-button__link{
+  border-radius: 15px !important;
+  padding: 15px 55px 15px 55px !important;
+  margin-bottom: 5vw !important;
+}
+
+/* .middlepic{
+
+
+} */
+
+.wp-image-324{
+  width: 100vw !important;
+  border: 1px #222222 solid;
+  margin-bottom: 5vh !important;
+}
+
+.wp-block-image{
+
+  text-align: center !important;
+}
+
+.wp-block-column{
+padding: auto !important;
+}
+
+.picto_p{
+margin: 2vh 5vw 2vh 5vw !important;
+text-align: center !important;
+font-family: 'Roboto';
+font-size: 1vw !important;
+}
+
+
+.maingrid{
+    display: grid !important;
+    grid-template-columns: 0.5fr 6fr 0.5fr !important;
+}
+
+/* *{border: 1px red solid;} */

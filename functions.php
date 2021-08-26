@@ -53,7 +53,7 @@ background-color : ###### !important;
 if (is_front_page()) {
     wp_enqueue_style(
         'front',
-        get_template_directory_uri(). '/assets/styles/main.css',
+        get_template_directory_uri(). '/assets/styles/front-page.css',
         array(),
         '1.0'
         );
