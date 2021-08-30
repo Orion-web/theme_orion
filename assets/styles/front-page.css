@@ -104,6 +104,16 @@
   border-radius: 15px !important;
   padding: 15px 55px 15px 55px !important;
   margin-bottom: 5vw !important;
+  cursor: pointer;
+}
+
+.wp-block-button__link:hover {
+  transform: scale(1.1) !important;
+  transition: 0.5s !important;
+}
+
+.wp-block-button__link:not(:hover) {
+  transition: 0.5s !important;
 }
 
 /* .middlepic{
@@ -144,4 +154,18 @@
 .btn_picto {
   margin: 2vw !important;
   padding: 2vw !important;
-}/*# sourceMappingURL=front-page.css.map */
+}
+
+.jump {
+  height: 25px !important;
+}
+
+/* 
+@media screen and (max-width: 720px) {
+  .sliderclass{
+      width: 700px !important;
+      height: 400px !important;
+  }
+}
+
+ *//*# sourceMappingURL=front-page.css.map */

@@ -69,6 +69,8 @@ if ( $section_bg_img = get_theme_mod( 'section_bg_img' ) )
                 echo ' style="background-image: url(' . $section_bg_img . ');"';
 
                         ?>
+                        >
+                        <div class="jump"></div>
                         
                         <?php
                         echo do_shortcode('[smartslider3 slider="2"]');
@@ -87,7 +89,7 @@ if ( $section_bg_img = get_theme_mod( 'section_bg_img' ) )
 <!-- fermeture réalisations -->
 
 
-
+<?php get_footer();?>
 
 
 
